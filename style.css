@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1496614932623-0a3a9743552e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY5Nzg0MzQ4Mw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: #000000;
+    opacity: 0.7;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.searchContent {
+    display: flex;
+    align-items: center;
+}
+
+.inputSearchCity {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    opacity: 1;
+    border: none;
+    outline: none;
+    background-color: #7c7c7c2b;
+    margin-right: 15px;
+
+}
+
+.searchBtn {
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    opacity: 1;
+    cursor: pointer;
+    background-color: #7c7c7c2b;
+}
+
+.searchBtn img {
+    width: 30px;
+}
+
+.cityName {
+    margin-top: 30px;
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+.tempInfo {
+    margin-top: 20px;
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+
+.tempContent {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tempText {
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.humidity {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+@media(max-width: 425px) {
+
+    .searchContent {
+        margin-top: 15px;
+    }
+
+    .cityName {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+
+    .tempInfo {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+
+    .tempText {
+        font-size: .8rem;
+        margin-bottom: 20px;
+    }
+
+    .humidity {
+        font-size: .8rem;
+        margin-bottom: 20px;
+    }
+}
